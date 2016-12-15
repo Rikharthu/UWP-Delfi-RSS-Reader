@@ -132,33 +132,35 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
-            _typeNameTable[0] = "Delfi_RSS_Reader.ItemView";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "Delfi_RSS_Reader.DetailsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Delfi_RSS_Reader.RSSFeedViewModel";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "String";
-            _typeNameTable[6] = "System.Collections.Generic.List`1<Delfi_RSS_Reader.FeedItem>";
-            _typeNameTable[7] = "Delfi_RSS_Reader.FeedItem";
-            _typeNameTable[8] = "System.Collections.ObjectModel.ObservableCollection`1<Delfi_RSS_Reader.FeedItem>";
-            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<Delfi_RSS_Reader.FeedItem>";
-            _typeNameTable[10] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[11] = "Delfi_RSS_Reader.MainPage";
+            _typeNameTable[3] = "Delfi_RSS_Reader.ItemView";
+            _typeNameTable[4] = "Delfi_RSS_Reader.RSSFeedViewModel";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "System.Collections.Generic.List`1<Delfi_RSS_Reader.FeedItem>";
+            _typeNameTable[8] = "Delfi_RSS_Reader.FeedItem";
+            _typeNameTable[9] = "System.Collections.ObjectModel.ObservableCollection`1<Delfi_RSS_Reader.FeedItem>";
+            _typeNameTable[10] = "System.Collections.ObjectModel.Collection`1<Delfi_RSS_Reader.FeedItem>";
+            _typeNameTable[11] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[12] = "Delfi_RSS_Reader.MainPage";
 
-            _typeTable = new global::System.Type[12];
-            _typeTable[0] = typeof(global::Delfi_RSS_Reader.ItemView);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::Delfi_RSS_Reader.DetailsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Delfi_RSS_Reader.RSSFeedViewModel);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::System.String);
-            _typeTable[6] = typeof(global::System.Collections.Generic.List<global::Delfi_RSS_Reader.FeedItem>);
-            _typeTable[7] = typeof(global::Delfi_RSS_Reader.FeedItem);
-            _typeTable[8] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Delfi_RSS_Reader.FeedItem>);
-            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::Delfi_RSS_Reader.FeedItem>);
-            _typeTable[10] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[11] = typeof(global::Delfi_RSS_Reader.MainPage);
+            _typeTable[3] = typeof(global::Delfi_RSS_Reader.ItemView);
+            _typeTable[4] = typeof(global::Delfi_RSS_Reader.RSSFeedViewModel);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::System.Collections.Generic.List<global::Delfi_RSS_Reader.FeedItem>);
+            _typeTable[8] = typeof(global::Delfi_RSS_Reader.FeedItem);
+            _typeTable[9] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Delfi_RSS_Reader.FeedItem>);
+            _typeTable[10] = typeof(global::System.Collections.ObjectModel.Collection<global::Delfi_RSS_Reader.FeedItem>);
+            _typeTable[11] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[12] = typeof(global::Delfi_RSS_Reader.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -193,32 +195,33 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ItemView() { return new global::Delfi_RSS_Reader.ItemView(); }
-        private object Activate_3_RSSFeedViewModel() { return new global::Delfi_RSS_Reader.RSSFeedViewModel(); }
-        private object Activate_6_List() { return new global::System.Collections.Generic.List<global::Delfi_RSS_Reader.FeedItem>(); }
-        private object Activate_7_FeedItem() { return new global::Delfi_RSS_Reader.FeedItem(); }
-        private object Activate_8_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Delfi_RSS_Reader.FeedItem>(); }
-        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Delfi_RSS_Reader.FeedItem>(); }
-        private object Activate_11_MainPage() { return new global::Delfi_RSS_Reader.MainPage(); }
-        private void VectorAdd_6_List(object instance, object item)
+        private object Activate_0_DetailsPage() { return new global::Delfi_RSS_Reader.DetailsPage(); }
+        private object Activate_3_ItemView() { return new global::Delfi_RSS_Reader.ItemView(); }
+        private object Activate_4_RSSFeedViewModel() { return new global::Delfi_RSS_Reader.RSSFeedViewModel(); }
+        private object Activate_7_List() { return new global::System.Collections.Generic.List<global::Delfi_RSS_Reader.FeedItem>(); }
+        private object Activate_8_FeedItem() { return new global::Delfi_RSS_Reader.FeedItem(); }
+        private object Activate_9_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Delfi_RSS_Reader.FeedItem>(); }
+        private object Activate_10_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Delfi_RSS_Reader.FeedItem>(); }
+        private object Activate_12_MainPage() { return new global::Delfi_RSS_Reader.MainPage(); }
+        private void VectorAdd_7_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Delfi_RSS_Reader.FeedItem>)instance;
             var newItem = (global::Delfi_RSS_Reader.FeedItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_8_ObservableCollection(object instance, object item)
+        private void VectorAdd_9_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Delfi_RSS_Reader.FeedItem>)instance;
             var newItem = (global::Delfi_RSS_Reader.FeedItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_9_Collection(object instance, object item)
+        private void VectorAdd_10_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Delfi_RSS_Reader.FeedItem>)instance;
             var newItem = (global::Delfi_RSS_Reader.FeedItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_10_IList(object instance, object item)
+        private void VectorAdd_11_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
@@ -235,9 +238,9 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Delfi_RSS_Reader.ItemView
+            case 0:   //  Delfi_RSS_Reader.DetailsPage
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_ItemView;
+                userType.Activator = Activate_0_DetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -250,9 +253,16 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
                 xamlType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Delfi_RSS_Reader.RSSFeedViewModel
+            case 3:   //  Delfi_RSS_Reader.ItemView
+                userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_ItemView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Delfi_RSS_Reader.RSSFeedViewModel
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_RSSFeedViewModel;
+                userType.Activator = Activate_4_RSSFeedViewModel;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Link");
                 userType.AddMemberName("Description");
@@ -265,24 +275,24 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  Object
+            case 5:   //  Object
                 xamlType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  String
+            case 6:   //  String
                 xamlType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  System.Collections.Generic.List`1<Delfi_RSS_Reader.FeedItem>
+            case 7:   //  System.Collections.Generic.List`1<Delfi_RSS_Reader.FeedItem>
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_6_List;
+                userType.CollectionAdd = VectorAdd_7_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Delfi_RSS_Reader.FeedItem
+            case 8:   //  Delfi_RSS_Reader.FeedItem
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_7_FeedItem;
+                userType.Activator = Activate_8_FeedItem;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Link");
                 userType.AddMemberName("ImageUrl");
@@ -295,30 +305,30 @@ namespace Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  System.Collections.ObjectModel.ObservableCollection`1<Delfi_RSS_Reader.FeedItem>
+            case 9:   //  System.Collections.ObjectModel.ObservableCollection`1<Delfi_RSS_Reader.FeedItem>
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Delfi_RSS_Reader.FeedItem>"));
-                userType.CollectionAdd = VectorAdd_8_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_9_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 9:   //  System.Collections.ObjectModel.Collection`1<Delfi_RSS_Reader.FeedItem>
+            case 10:   //  System.Collections.ObjectModel.Collection`1<Delfi_RSS_Reader.FeedItem>
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_Collection;
-                userType.CollectionAdd = VectorAdd_9_Collection;
+                userType.Activator = Activate_10_Collection;
+                userType.CollectionAdd = VectorAdd_10_Collection;
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Collections.Generic.IList`1<Object>
+            case 11:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_10_IList;
+                userType.CollectionAdd = VectorAdd_11_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Delfi_RSS_Reader.MainPage
+            case 12:   //  Delfi_RSS_Reader.MainPage
                 userType = new global::Delfi_RSS_Reader.Delfi_RSS_Reader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_MainPage;
+                userType.Activator = Activate_12_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

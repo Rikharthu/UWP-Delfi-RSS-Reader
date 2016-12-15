@@ -295,7 +295,7 @@ namespace Delfi_RSS_Reader
         private void FeedListSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             FeedItem item = (sender as ListView).SelectedItem as FeedItem;
-            FeedWebView.NavigateToString(item.Description);
+            detailsFrame.Navigate(typeof (DetailsPage), item);
         }
     }
 

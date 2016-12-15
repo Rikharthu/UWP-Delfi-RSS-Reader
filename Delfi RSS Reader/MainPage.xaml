@@ -137,11 +137,9 @@
 
                 </ScrollViewer>
 
-                <WebView
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Name="FeedWebView"
-                    DefaultBackgroundColor="Aqua" />
+                <Frame Name="detailsFrame"
+                       Grid.Column="1"
+                       Grid.Row="1"></Frame>
 
             </Grid>
 

@@ -1,1 +1,1 @@
-C:\Workspace\Windows\Delfi RSS Reader\Delfi RSS Reader\Delfi RSS Reader.csproj;x64
+D:\Workspace\Windows\RSS\Delfi RSS Reader\Delfi RSS Reader.csproj;x64
