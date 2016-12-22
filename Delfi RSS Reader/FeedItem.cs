@@ -35,7 +35,15 @@ namespace Delfi_RSS_Reader
         }
 
         // TODO parse to normal date and get return according to locale
-        public string PubDate { get; set; }
+        private string pubDate;
+        public string PubDate {
+            get
+            {
+                DateTime dt = DateTime.Parse(pubDate);
+                return dt.ToString("dd.MM, hh:mm");
+            }
+            set { pubDate = value; }
+        }
 
         private string category;
         public string Category

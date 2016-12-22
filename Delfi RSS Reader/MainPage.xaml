@@ -25,24 +25,22 @@
                         Click="HamburgerButton_Click" />
                 <StackPanel Orientation="Horizontal"
                             Height="50">
-                    <Image
-                        Width="50"
-                        Height="50"
-                        Source="Assets/ic_book_black_24dp_1x.png" />
-                    <TextBlock
-                        VerticalAlignment="Center"
-                        FontWeight="Bold">
+                    <Image Width="50"
+                           Height="50"
+                           Source="Assets/ic_book_black_24dp_1x.png" />
+                    <TextBlock VerticalAlignment="Center"
+                               FontWeight="Bold">
                         Категории
                     </TextBlock>
                 </StackPanel>
-                <ScrollViewer>
-                    <ListBox x:Name="listBox"
+                <ListBox x:Name="listBox"
                          Margin="50,0,0,0"
+                         Height="500"
                          ItemsSource="{Binding Items}"
                          HorizontalAlignment="Left"
                          SelectionMode="Multiple"
+                         ScrollViewer.VerticalScrollBarVisibility="Visible"
                          SelectionChanged="listBox_SelectionChanged" />
-                </ScrollViewer>
             </StackPanel>
 
         </SplitView.Pane>
@@ -89,37 +87,50 @@
                 </StackPanel>
 
 
-                <ScrollViewer Grid.Column="0"
-                              Grid.Row="1">
-                    <Grid Background="#eeeeee">
+               
+                    <Grid Background="#eeeeee"
+                          Grid.Column="0"
+                          Grid.Row="1">
                         <ListView
                             SelectionChanged="FeedListSelectionChanged"
                             Name="FeedListView"
-                            ItemsSource="{Binding FilteredItems}">
-                            <ListView.ItemTemplate>
+                            ItemsSource="{Binding FilteredItems}"
+                            HorizontalContentAlignment="Stretch">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment"
+                                            Value="Stretch" />
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        <ListView.ItemTemplate>
                                 <DataTemplate>
+
                                     <Border CornerRadius="4"
                                             Background="White"
                                             BorderBrush="White"
                                             BorderThickness="1"
-                                            Margin="2">
+                                            Margin="2,6,2,6"
+                                            Padding="10">
 
-                                        <StackPanel Orientation="Vertical"
-                                                    Width="480">
-                                            <Border Background="#FF365BF6">
-                                                <TextBlock TextAlignment="Left"
-                                                           Text="{Binding Title}"
-                                                           FontWeight="Bold"
-                                                           TextWrapping="Wrap"
-                                                           FocusVisualPrimaryBrush="White"
-                                                           Foreground="White" />
-                                            </Border>
-                                            <Border Background="#FFFCFFAD">
-                                                <TextBlock Text="{Binding PlainTextDescription}"
-                                                           TextAlignment="Left"
-                                                           TextWrapping="Wrap" />
-                                            </Border>
-                                        </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding PubDate}"/>
+                                            <TextBlock Grid.Column="2" Text="{Binding Category}"/>
+                                        </Grid>
+                                        <TextBlock TextAlignment="Center"
+                                                   Text="{Binding Title}"
+                                                   FontWeight="Bold"
+                                                   TextWrapping="Wrap" />
+                                        <TextBlock Text="{Binding PlainTextDescription}"
+                                                   TextAlignment="Left"
+                                                   Margin="0,6,0,0"
+                                                   TextWrapping="Wrap" />
+                                    </StackPanel>
                                     </Border>
 
                                 </DataTemplate>
@@ -130,12 +141,11 @@
                         <ProgressRing Name="LoadingProgressRing"
                                       Width="60"
                                       Height="60"
-                                      Foreground="Red" />
+                                      Foreground="Black" />
 
                     </Grid>
 
 
-                </ScrollViewer>
 
                 <Frame Name="detailsFrame"
                        Grid.Column="1"

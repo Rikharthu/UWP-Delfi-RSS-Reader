@@ -43,27 +43,12 @@ namespace Delfi_RSS_Reader
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
-            int x1, x2, y1, y2;
-
-            var line = new Line();
-            line.Stroke = new SolidColorBrush(Colors.Black);
-            line.StrokeThickness = 3;
-            //line.Width = 50;
-
-            Canvas.SetTop(line, 50);
-            Canvas.SetLeft(line, 50);
-
-            TheCanvas.Children.Add(line);
-        }
-
         private async void button1_Click(object sender, RoutedEventArgs e)
         {
             LoadingProgressRing.IsActive = true;
             listBox.Visibility = Visibility.Collapsed;
             DataContext = null;
+            // симуляция загрузки
             await Task.Delay(2000);
 
             bool isInternetConnected = NetworkInterface.GetIsNetworkAvailable();
