@@ -59,7 +59,7 @@ namespace Delfi_RSS_Reader
                 HttpClient client = new HttpClient();
 
                 // open response stream 
-                //var response = await client.GetStreamAsync("http://rus.delfi.lv/rss.php");
+                //var response = await client.GetStreamAsync("http://feeds.bbci.co.uk/news/world/rss.xml");
                 var response = await client.GetStreamAsync("http://www.delfi.lv/rss.php");
                 // convert stream to ling
                 XDocument xmlDoc = XDocument.Load(response);
